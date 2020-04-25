@@ -28,8 +28,7 @@ class Port(object):
     return val
 
 
-def serOpen():
-  return Port()
+serOpen = Port
 
 
 # Result does NOT include '\n'.
