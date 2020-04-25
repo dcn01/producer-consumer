@@ -3,6 +3,9 @@ from itertools import takewhile
 from queue import Queue
 from stoppablethread import StopThread
 from stoppablethread import StoppableThread
+from utils import GREEN
+from utils import YELLOW
+from utils import highlight
 import logging
 import random
 import string
@@ -27,12 +30,6 @@ class Port(object):
 
 def serOpen():
   return Port()
-
-
-GREEN=32
-YELLOW=33
-def highlight(txt, color):
-  return f'\033[{color}m{txt}\033[0m'
 
 
 # Result does NOT include '\n'.
